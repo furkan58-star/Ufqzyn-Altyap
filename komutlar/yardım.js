@@ -62,7 +62,8 @@ exports.run = (client, message, args) => {
 **${prefix}otorol-ayarla** = Otomatik Rol Sistemi Ayarlarsın.
 **${prefix}otorol-sıfırla** = Otomatik Rol Sistemi Sıfırlarsın.
 **${prefix}otorol-mesaj** = Otomatik Rol Sistemi Giriş Mesajı Ayarlarsın.
-
+**${prefix}sayaç ayarla** = Sayaç Sistemi Ayarlarsın.
+**${prefix}sayaç sıfırla** = Sayaç Sistemi Sıfırlarsın.
 **${prefix}sa-as** = SA AS Sistemi Açarsın.
 **${prefix}sa-as-mesaj** = SA AS Sistemi Mesajı Ayarlarsın.`
             )
