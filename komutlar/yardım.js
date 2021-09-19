@@ -1,8 +1,9 @@
 const Discord = require("discord.js");
-const ayarlar = require("../config.json");
+const config = require("../config.json");
+const db = require('quick.db');
 
-var prefix = ayarlar.prefix;
 exports.run = (client, message, args) => {
+    let prefix = await db.fetch(`prefix_${message.guild.id}`) || config.prefix
     if(args[0]) return message.channel.send(new Discord.MessageEmbed()
     .setColor('RANDOM')
     .setAuthor(`BOTADI - Yardım`, client.user.avatarURL({format:"png",size:2048,dynamic:true}))
