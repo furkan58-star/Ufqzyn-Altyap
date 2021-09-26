@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const config = require("../config.json");
 const db = require('quick.db');
 
-exports.run = (client, message, args) => {
+exports.run = async (client, message, args) => {
     let prefix = await db.fetch(`prefix_${message.guild.id}`) || config.prefix
     if(args[0]) return message.channel.send(new Discord.MessageEmbed()
     .setColor('RANDOM')
